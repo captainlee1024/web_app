@@ -1,0 +1,33 @@
+# 程序本身的一些信息
+app:
+  name: "web_app" # 程序的名称
+  mode: "dev" # 程序运行的模式 这里是开发模式
+  port: 8081 # 程序的端口
+
+# 日志配置
+log:
+  level: "debug" # 日志级别 这里设置 debug 级别
+  filename: "web_app.log"
+  max_size: 200 # 日志最大容量
+  max_age: 30 # 备份存储最大时间
+  max_backups: 7 # 备份最大数量
+
+# MySQL 相关配置
+mysql:
+  #host: "127.0.0.1"
+  host: mysql-3307
+  port: "3307"
+  user: "root"
+  password: "644315"
+  dbname: "go_test"
+  max_open_conns: 200 # 最大连接数
+  max_idle_conns: 50 # 最大空闲连接数
+
+# Redis　相关配置
+redis:
+  #host: "127.0.0.1"
+  host: redis-6380
+  port: 6380
+  password: "644315"
+  db: 0
+  pool_size: 100
